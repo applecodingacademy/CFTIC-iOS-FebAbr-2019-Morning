@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Tipos de datos'/>
+        <page name='Operadores'/>
+        <page name='Controles de flujo'/>
+        <page name='Primos'/>
+        <page name='Opcionales'/>
+        <page name='Colecciones (I) Array'/>
+        <page name='Colecciones (II) Diccionarios'/>
+        <page name='Colecciones (III) Sets'/>
+        <page name='Tuplas'/>
+        <page name='Funciones'/>
+        <page name='Ejercicio 1'/>
+        <page name='Ejercicio 2'/>
+        <page name='Ejercicio 3'/>
+        <page name='Clases Definición'/>
+        <page name='Clases Práctico'/>
+    </pages>
+</playground>
