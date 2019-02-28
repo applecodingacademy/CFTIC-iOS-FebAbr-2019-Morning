@@ -8,7 +8,10 @@ class Personaje {
    var fuerza:Int
    var muerto = false
    
-   init(vida:Int) {
+   init?(vida:Int) {
+      if vida < 0 {
+         return nil
+      }
       self.vida = vida
       self.fuerza = 40
    }
@@ -101,7 +104,7 @@ enemigo1.atacar(objetivo: heroe1)
 enemigo1.atacar(objetivo: heroe1)
 print("Partida \(partida ? "activa" : "finalizada"), Puntos: \(puntos)")
 
-
+let personaje = Personaje(vida: -10)
 
 class Etiqueta {
    var texto:String

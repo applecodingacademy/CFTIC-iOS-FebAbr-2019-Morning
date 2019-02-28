@@ -18,5 +18,6 @@
         <page name='Clases Práctico'/>
         <page name='Structs'/>
         <page name='Singleton y Control de Acceso'/>
+        <page name='Enums'/>
     </pages>
 </playground>

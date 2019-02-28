@@ -4,14 +4,14 @@ struct Empleado {
    let nombre:String
    let apellidos:String
    let departamento:String
-   private var salario:Double
+   var salario:Double
    
-   init(contabilidadNombre nombre:String, apellidos:String) {
-      self.nombre = nombre
-      self.apellidos = apellidos
-      self.departamento = "Contabilidad"
-      self.salario = 25000
-   }
+//   init(contabilidadNombre nombre:String, apellidos:String) {
+//      self.nombre = nombre
+//      self.apellidos = apellidos
+//      self.departamento = "Contabilidad"
+//      self.salario = 25000
+//   }
    
    func impuesto() -> Double {
       var retencion = 0.12
@@ -38,8 +38,6 @@ struct Empleado {
    }
 }
 
-var empleado1 = Empleado(contabilidadNombre: "Julio César", apellidos: "Fernández")
-empleado1.impuesto()
-empleado1.fijarSalario(salario: 50000)
-empleado1.verSalario()
+
+
 
