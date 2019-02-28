@@ -33,7 +33,7 @@ struct Empleado {
       self.salario = salario
    }
    
-   mutating func verSalario() -> Double {
+   func verSalario() -> Double {
       return salario
    }
 }
