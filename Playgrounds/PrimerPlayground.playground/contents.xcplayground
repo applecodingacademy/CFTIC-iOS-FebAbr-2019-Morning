@@ -15,6 +15,8 @@
         <page name='Ejercicio 2'/>
         <page name='Ejercicio 3'/>
         <page name='Clases Definición'/>
-        <page name='Clases Práctico'/>
+        <page name='Clases Práctico'/>
+        <page name='Structs'/>
+        <page name='Singleton y Control de Acceso'/>
     </pages>
 </playground>
