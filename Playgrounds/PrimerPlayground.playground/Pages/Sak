@@ -1,0 +1,164 @@
+//Estructura de control de un colegio
+//Class que permite abstraer el concepto de personas que un colegio. Utilizar el concepto de los roles. Qué es cada persona: Profesor, alumno...
+//Crear un struct que represente el concepto de asignatura que se imparten en el colegio
+//Crear hijos de estas clases: Profesor o alumno.
+//El programa permite crear los hijos (profesores y alumnos)
+//Generar una clase que será un Aula: incluir para cada aula: un tutor, los profesores que dan clase en el aula y los alumnos que estan en ese aula.
+//El profesor tiene que tener unas asignaturas que dar y el alumno un curso al que va.
+//Datos de ejemplo para probar que funciona.
+
+import Foundation
+//Enumeración de los roles asociados a los hijos de Persona
+enum Rol {
+    case Profesor, Tutor, Alumno, Director
+}
+//Estructura de las asignaturas
+struct Asignaturas {
+    enum Asignatura {
+        case Lengua, Matemáticas, História, Informática
+    }
+}
+//Estructura de los cursos
+struct Cursos {
+    enum Curso {
+        case Primero, Segundo, Tercero, Cuarto
+    }
+}
+//Clase Padre "Persona"
+ class Persona {
+    var nombre:String
+    var edad:Int
+    
+    init (nombre:String, edad:Int){
+        self.nombre = nombre
+        self.edad = edad
+    }
+}
+//Clase hija de Persona (Profesor)
+class Profesor:Persona {
+    let rol = Rol.Profesor
+    
+    var asignaturas:[Asignaturas.Asignatura]
+    init (nombre:String, edad:Int, asignaturas:[Asignaturas.Asignatura]){
+        self.asignaturas=asignaturas
+        super.init(nombre: nombre, edad: edad)
+    }//Función que hace un desglose del aula
+     func queAsignaturas(){
+        for nombre in asignaturas {
+            print ("------\(nombre)")
+        }
+    }
+}
+//Clase Alumno
+class Alumno: Persona{
+    let rol = Rol.Alumno
+    var curso:Cursos.Curso
+    init (nombre:String, edad:Int, curso:Cursos.Curso){
+        self.curso = curso
+        super.init(nombre:nombre, edad: edad)
+    }
+}
+//Clase tutor
+class Tutor: Persona{
+    let rol=Rol.Tutor
+    override init (nombre:String, edad:Int){
+        super.init(nombre:nombre, edad:edad)
+    }
+}
+
+//Clase Director
+class Director: Persona{
+   let rol=Rol.Director
+   override init (nombre:String, edad:Int){
+      super.init(nombre:nombre, edad:edad)
+   }
+}
+   
+//Clase Aula contenedora de todos los hijos de Persona
+class Aula{
+    let numAula:Int
+    let nombreAula:String
+    var tutor:Tutor
+    var profesor:[Profesor]
+    var alumnos:[Alumno]
+    
+    init(numAula:Int, nombreAula:String, tutor:Tutor, profesor:[Profesor], alumnos:[Alumno]){
+        self.numAula = numAula
+        self.nombreAula = nombreAula
+        self.tutor=tutor
+        self.profesor=profesor
+        self.alumnos=alumnos
+    }
+   func listarAula () {
+      print ("\n\n")
+      print ("===============================")
+      print ("Nombre aula: \(self.nombreAula)")
+      print ("Número aula: \(self.numAula)")
+      print ("Tutor aula: \(self.tutor.nombre)")
+      print ("===============================")
+      print ("Profesor(es) aula:")
+      for profe in self.profesor {
+        print ("--\(profe.nombre)")
+        print ("--Asignaturas:")
+        profe.queAsignaturas()
+      }
+      print ("-------------------------------")
+      print ("Listado de alumnos:")
+      for alu in self.alumnos {
+         print ("--Nombre:\(alu.nombre) Curso:\(alu.curso) Edad:\(alu.edad)")
+      }
+   }
+}
+
+//Clase colegio, contenedora de Aulas
+class Colegio {
+   var nombre:String
+   var domicilio:String
+   var director:Director
+   var aulas:[Aula]
+   
+   init(nombre:String, domicilio:String, director:Director, aulas:[Aula]){
+      self.nombre = nombre
+      self.domicilio = domicilio
+      self.director = director
+      self.aulas = aulas
+   }
+   
+   func listarAulas () {
+      print("COLEGIO \(self.nombre)")
+      print ("Domicilio: \(self.domicilio)")
+      print ("Director: \(self.director.nombre)")
+      
+      for aul in aulas {
+         aul.listarAula()
+      }
+   }
+}
+
+//****PRUEBAS****
+//Definimos un profesor
+let profe1 = Profesor (nombre: "MARIANO", edad: 49, asignaturas:[Asignaturas.Asignatura.História,Asignaturas.Asignatura.Informática])
+let profe2 = Profesor (nombre: "GEMA", edad: 40, asignaturas:[Asignaturas.Asignatura.Lengua, Asignaturas.Asignatura.Matemáticas])
+
+//Definimos dos alumnos
+let alumno1 = Alumno(nombre: "Daniel", edad: 15, curso: Cursos.Curso.Primero)
+let alumno2 = Alumno(nombre: "Francisco", edad: 16, curso: Cursos.Curso.Primero)
+
+//Definimos un tutor
+let tutor1 = Tutor(nombre: "IGNACIO", edad: 20)
+let tutor2 = Tutor(nombre: "JULIAN", edad: 48)
+
+let dire1 = Director(nombre: "PRIMITIVO", edad: 58)
+
+//profe1.queAsignaturas() //Preguntamos las asignaturas que tiene este profe
+
+//Definimos un aula, AULA 1 y añadimos todas las personas que deben estar
+let aula1 = Aula(numAula: 1, nombreAula: "AULA MADRID", tutor: tutor1, profesor: [profe1, profe2] ,alumnos: [alumno1, alumno2])
+let aula2 = Aula(numAula: 2, nombreAula: "AULA BOADILLA", tutor: tutor2, profesor: [profe2, profe1] ,alumnos: [alumno2, alumno1])
+
+//Definimos un colegio que contendrá todo lo anterior
+let colegio1 = Colegio(nombre: "PRINCIPE FELIPE", domicilio: "BOADILLA DEL MONTE", director: dire1, aulas: [aula1,aula2])
+
+colegio1.listarAulas()
+
+
