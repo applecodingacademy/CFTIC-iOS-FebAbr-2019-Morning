@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Funcional'/>
+        <page name='Calculadora Java'/>
+        <page name='Calculadora Swift'/>
+        <page name='Calculadora Funcional'/>
+        <page name='Calculadora Closures'/>
+        <page name='Calculadora Reducida'/>
+        <page name='Higher Order Functions (Map)'/>
+        <page name='Higher Order Functions (Filter)'/>
+        <page name='Higher Order Functions (Reduce)'/>
+    </pages>
+</playground>
