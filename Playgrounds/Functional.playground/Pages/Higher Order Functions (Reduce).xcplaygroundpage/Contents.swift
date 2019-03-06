@@ -26,7 +26,7 @@ func calculadora(numeros:[Int], operacion: Operacion) -> Int {
 
 let cifras = [5,7,3,9,2,5,1,8]
 calculadora(numeros: cifras, operacion: .suma)
-calculadora(numeros: cifras, operacion: .mul)
+calculadora(numeros: cifras, operacion: .div)
 calculadora(numeros: cifras, operacion: .sumSquare)
 
 let csv = cifras.reduce("", {"\($0),\($1)"}).dropFirst()

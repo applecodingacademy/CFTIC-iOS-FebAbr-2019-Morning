@@ -10,5 +10,6 @@
         <page name='Higher Order Functions (Map)'/>
         <page name='Higher Order Functions (Filter)'/>
         <page name='Higher Order Functions (Reduce)'/>
+        <page name='Higher Order Functions (Otros)'/>
     </pages>
 </playground>
