@@ -19,5 +19,6 @@
         <page name='Structs'/>
         <page name='Singleton y Control de Acceso'/>
         <page name='Enums'/>
+        <page name='Propiedades'/>
     </pages>
 </playground>
