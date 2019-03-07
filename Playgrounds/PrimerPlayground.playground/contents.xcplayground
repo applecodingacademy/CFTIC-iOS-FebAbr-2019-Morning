@@ -23,6 +23,7 @@
         <page name='Protocolos'/>
         <page name='Ejemplo Protocolos'/>
         <page name='Delegaciones'/>
-        <page name='Asincronía'/>
+        <page name='Asincronía 1'/>
+        <page name='Asincronía 2'/>
     </pages>
 </playground>
