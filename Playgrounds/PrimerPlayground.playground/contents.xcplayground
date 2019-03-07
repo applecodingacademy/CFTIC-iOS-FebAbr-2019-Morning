@@ -20,5 +20,9 @@
         <page name='Singleton y Control de Acceso'/>
         <page name='Enums'/>
         <page name='Propiedades'/>
+        <page name='Protocolos'/>
+        <page name='Ejemplo Protocolos'/>
+        <page name='Delegaciones'/>
+        <page name='Asincronía'/>
     </pages>
 </playground>

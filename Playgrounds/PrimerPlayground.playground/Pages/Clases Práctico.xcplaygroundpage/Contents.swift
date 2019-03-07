@@ -76,6 +76,28 @@ class Heroe:Personaje {
 final class Enemigo:Personaje {
    var arma:String
    
+   override var vida: Int {
+      get {
+         return fuerza * 2
+      }
+      set {
+         self.fuerza = newValue / 2
+      }
+   }
+   
+   override var fuerza: Int {
+      willSet {
+         if newValue < 0 {
+            vida = 0
+         }
+      }
+      didSet {
+         if fuerza < 0 {
+            fuerza = 0
+         }
+      }
+   }
+   
    init(arma:String, vida:Int, fuerza:Int) {
       self.arma = arma
       super.init(vida: vida, fuerza: fuerza)
