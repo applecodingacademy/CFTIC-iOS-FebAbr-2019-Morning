@@ -24,6 +24,7 @@
         <page name='Ejemplo Protocolos'/>
         <page name='Delegaciones'/>
         <page name='Asincronía 1'/>
-        <page name='Asincronía 2'/>
+        <page name='Asincronía 2'/>
+        <page name='Extensiones'/>
     </pages>
 </playground>
