@@ -15,7 +15,7 @@ class PrimerViewController: UIViewController {
 
    override func viewDidLoad() {
       super.viewDidLoad()
-      etiqueta.textColor = .blue
+      etiqueta.textColor = UIColor(named: "Fondo")
    }
     
    @IBAction func pulsoBoton(_ sender: UIButton) {
