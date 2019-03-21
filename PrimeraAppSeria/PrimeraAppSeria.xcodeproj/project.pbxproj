@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A6C55EF22438B2E00A07D83 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C55EE22438B2E00A07D83 /* DetailTableViewController.swift */; };
+		5A6C55F12243B1FF00A07D83 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C55F02243B1FF00A07D83 /* Helper.swift */; };
 		5ADD20B922425C9200D210CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD20B822425C9200D210CF /* AppDelegate.swift */; };
 		5ADD20BE22425C9200D210CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADD20BC22425C9200D210CF /* Main.storyboard */; };
 		5ADD20C022425CA900D210CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADD20BF22425CA900D210CF /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A6C55EE22438B2E00A07D83 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		5A6C55F02243B1FF00A07D83 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		5ADD20B522425C9200D210CF /* PrimeraAppSeria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeraAppSeria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADD20B822425C9200D210CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ADD20BD22425C9200D210CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 			children = (
 				5ADD20B822425C9200D210CF /* AppDelegate.swift */,
 				5ADD20BC22425C9200D210CF /* Main.storyboard */,
+				5A6C55EE22438B2E00A07D83 /* DetailTableViewController.swift */,
+				5A6C55F02243B1FF00A07D83 /* Helper.swift */,
 				5ADD20CA22425F7C00D210CF /* Tabla1ViewController.swift */,
 				5ADD20CE224268C600D210CF /* Model.swift */,
 				5ADD20BF22425CA900D210CF /* Assets.xcassets */,
@@ -142,7 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A6C55EF22438B2E00A07D83 /* DetailTableViewController.swift in Sources */,
 				5ADD20CF224268C600D210CF /* Model.swift in Sources */,
+				5A6C55F12243B1FF00A07D83 /* Helper.swift in Sources */,
 				5ADD20B922425C9200D210CF /* AppDelegate.swift in Sources */,
 				5ADD20CB22425F7C00D210CF /* Tabla1ViewController.swift in Sources */,
 			);

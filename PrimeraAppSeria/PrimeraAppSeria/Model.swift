@@ -30,3 +30,19 @@ func loadData() {
       print("Error \(error)")
    }
 }
+
+func saveData() {
+   guard let ruta = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("MOCK_DATA").appendingPathExtension("json") else {
+      return
+   }
+   if FileManager.default.fileExists(atPath: ruta.path) {
+      try? FileManager.default.removeItem(at: ruta)
+   }
+   do {
+      let encoder = JSONEncoder()
+      let rawData = try encoder.encode(mockdata)
+      try rawData.write(to: ruta, options: .atomicWrite)
+   } catch {
+      print("Error \(error)")
+   }
+}
