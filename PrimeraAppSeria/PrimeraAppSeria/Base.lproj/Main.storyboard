@@ -354,6 +354,90 @@
             </objects>
             <point key="canvasLocation" x="1972" y="98.50074962518741"/>
         </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="paM-8v-8ho">
+            <objects>
+                <collectionViewController id="hcm-1G-KyM" customClass="CollectionViewController" customModule="PrimeraAppSeria" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="W4y-m9-eHC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="Uh3-Bl-5Sj">
+                            <size key="itemSize" width="152" height="92"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="zeldaCol" id="OuE-HB-cZf" customClass="CollectionViewZelda" customModule="PrimeraAppSeria" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="152" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="152" height="92"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="Af0-Gy-dSc">
+                                            <rect key="frame" x="4" y="4" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="14Z-wD-Q6z"/>
+                                                <constraint firstAttribute="height" constant="64" id="bWq-Ao-KTe"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJe-Hp-iH1">
+                                            <rect key="frame" x="76" y="4" width="72" height="16"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE8-BO-jC6">
+                                            <rect key="frame" x="76" y="28" width="72" height="36"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ugg-89-pZY">
+                                            <rect key="frame" x="4" y="72" width="144" height="16"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ugg-89-pZY" secondAttribute="bottom" constant="4" id="0Ne-mL-0zU"/>
+                                    <constraint firstAttribute="trailing" secondItem="dJe-Hp-iH1" secondAttribute="trailing" constant="4" id="Fzb-Mw-0Z7"/>
+                                    <constraint firstItem="EE8-BO-jC6" firstAttribute="top" secondItem="dJe-Hp-iH1" secondAttribute="bottom" constant="8" id="Kch-Pe-Sem"/>
+                                    <constraint firstAttribute="trailing" secondItem="EE8-BO-jC6" secondAttribute="trailing" constant="4" id="ULT-0k-tNj"/>
+                                    <constraint firstItem="ugg-89-pZY" firstAttribute="top" secondItem="EE8-BO-jC6" secondAttribute="bottom" constant="8" id="UcV-6E-Ykz"/>
+                                    <constraint firstItem="ugg-89-pZY" firstAttribute="top" secondItem="Af0-Gy-dSc" secondAttribute="bottom" constant="4" id="WIm-A2-LPe"/>
+                                    <constraint firstAttribute="trailing" secondItem="ugg-89-pZY" secondAttribute="trailing" constant="4" id="YQ0-0d-8Gh"/>
+                                    <constraint firstItem="ugg-89-pZY" firstAttribute="leading" secondItem="OuE-HB-cZf" secondAttribute="leading" constant="4" id="YZR-2S-Tjf"/>
+                                    <constraint firstItem="Af0-Gy-dSc" firstAttribute="leading" secondItem="OuE-HB-cZf" secondAttribute="leading" constant="4" id="csZ-hn-0Ny"/>
+                                    <constraint firstItem="EE8-BO-jC6" firstAttribute="leading" secondItem="Af0-Gy-dSc" secondAttribute="trailing" constant="8" id="nka-Ri-YdY"/>
+                                    <constraint firstItem="Af0-Gy-dSc" firstAttribute="top" secondItem="OuE-HB-cZf" secondAttribute="top" constant="4" id="pc2-BL-Dve"/>
+                                    <constraint firstItem="dJe-Hp-iH1" firstAttribute="leading" secondItem="Af0-Gy-dSc" secondAttribute="trailing" constant="8" id="xyu-na-BbW"/>
+                                    <constraint firstItem="dJe-Hp-iH1" firstAttribute="top" secondItem="OuE-HB-cZf" secondAttribute="top" constant="4" id="ym5-nJ-LYZ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="email" destination="ugg-89-pZY" id="bOu-OK-9rY"/>
+                                    <outlet property="first_name" destination="dJe-Hp-iH1" id="LB4-P2-Kbi"/>
+                                    <outlet property="imagen" destination="Af0-Gy-dSc" id="2jU-iR-PKp"/>
+                                    <outlet property="last_name" destination="EE8-BO-jC6" id="Opu-LP-cGY"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="hcm-1G-KyM" id="2ca-5f-31f"/>
+                            <outlet property="delegate" destination="hcm-1G-KyM" id="ZdF-R8-4b5"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="LRX-OI-AV7"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1uT-2S-1Ch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2911.1999999999998" y="799.2503748125938"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8zj-q9-9I2">
             <objects>
@@ -366,6 +450,7 @@
                     <connections>
                         <segue destination="ykc-la-SJ3" kind="relationship" relationship="viewControllers" id="sC0-Ho-wq8"/>
                         <segue destination="VEH-GL-GsM" kind="relationship" relationship="viewControllers" id="ew8-9N-x7U"/>
+                        <segue destination="G2d-Bo-1bL" kind="relationship" relationship="viewControllers" id="313-v6-Kwb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9s-q6-rl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -391,11 +476,31 @@
             </objects>
             <point key="canvasLocation" x="1972" y="-612"/>
         </scene>
+        <!--Zeldas-->
+        <scene sceneID="lZi-ek-j5O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G2d-Bo-1bL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Zeldas" image="documents" id="9QX-wA-fYz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sSU-mA-SVU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hcm-1G-KyM" kind="relationship" relationship="rootViewController" id="eWU-cf-muX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JkH-6N-8cw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="839"/>
+        </scene>
     </scenes>
     <resources>
         <image name="apple" width="30" height="30"/>
         <image name="businessman" width="30" height="30"/>
         <image name="contact_card" width="30" height="30"/>
+        <image name="documents" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aYv-hg-WEN"/>
