@@ -51,6 +51,7 @@ class DetailTableViewController: UITableViewController {
             datos.email = email.text!
             mockdata[fila] = datos
          }
+         saveData()
          performSegue(withIdentifier: "save", sender: self)
       }
    }

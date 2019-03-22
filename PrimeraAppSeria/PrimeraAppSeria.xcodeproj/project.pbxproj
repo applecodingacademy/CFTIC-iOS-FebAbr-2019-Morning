@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5A6C55EF22438B2E00A07D83 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C55EE22438B2E00A07D83 /* DetailTableViewController.swift */; };
 		5A6C55F12243B1FF00A07D83 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C55F02243B1FF00A07D83 /* Helper.swift */; };
+		5A8888452244DA0500A1556E /* Table2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8888442244DA0500A1556E /* Table2ViewController.swift */; };
+		5A8888472244DC9600A1556E /* MORE_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A8888462244DC9600A1556E /* MORE_DATA.json */; };
 		5ADD20B922425C9200D210CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD20B822425C9200D210CF /* AppDelegate.swift */; };
 		5ADD20BE22425C9200D210CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADD20BC22425C9200D210CF /* Main.storyboard */; };
 		5ADD20C022425CA900D210CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ADD20BF22425CA900D210CF /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		5A6C55EE22438B2E00A07D83 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		5A6C55F02243B1FF00A07D83 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		5A8888442244DA0500A1556E /* Table2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table2ViewController.swift; sourceTree = "<group>"; };
+		5A8888462244DC9600A1556E /* MORE_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MORE_DATA.json; sourceTree = "<group>"; };
 		5ADD20B522425C9200D210CF /* PrimeraAppSeria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeraAppSeria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADD20B822425C9200D210CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ADD20BD22425C9200D210CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,12 +70,14 @@
 				5ADD20BC22425C9200D210CF /* Main.storyboard */,
 				5A6C55EE22438B2E00A07D83 /* DetailTableViewController.swift */,
 				5A6C55F02243B1FF00A07D83 /* Helper.swift */,
+				5A8888442244DA0500A1556E /* Table2ViewController.swift */,
 				5ADD20CA22425F7C00D210CF /* Tabla1ViewController.swift */,
 				5ADD20CE224268C600D210CF /* Model.swift */,
 				5ADD20BF22425CA900D210CF /* Assets.xcassets */,
 				5ADD20C122425CA900D210CF /* LaunchScreen.storyboard */,
 				5ADD20C422425CA900D210CF /* Info.plist */,
 				5ADD20CC224268A500D210CF /* MOCK_DATA.json */,
+				5A8888462244DC9600A1556E /* MORE_DATA.json */,
 			);
 			path = PrimeraAppSeria;
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 			files = (
 				5ADD20C322425CA900D210CF /* LaunchScreen.storyboard in Resources */,
 				5ADD20CD224268A500D210CF /* MOCK_DATA.json in Resources */,
+				5A8888472244DC9600A1556E /* MORE_DATA.json in Resources */,
 				5ADD20C022425CA900D210CF /* Assets.xcassets in Resources */,
 				5ADD20BE22425C9200D210CF /* Main.storyboard in Resources */,
 			);
@@ -152,6 +159,7 @@
 				5ADD20CF224268C600D210CF /* Model.swift in Sources */,
 				5A6C55F12243B1FF00A07D83 /* Helper.swift in Sources */,
 				5ADD20B922425C9200D210CF /* AppDelegate.swift in Sources */,
+				5A8888452244DA0500A1556E /* Table2ViewController.swift in Sources */,
 				5ADD20CB22425F7C00D210CF /* Tabla1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

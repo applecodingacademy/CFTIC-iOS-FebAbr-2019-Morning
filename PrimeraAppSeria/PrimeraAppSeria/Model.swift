@@ -19,11 +19,13 @@ struct MockData:Codable {
 }
 
 func loadData() {
-   guard let ruta = Bundle.main.url(forResource: "MOCK_DATA", withExtension: "json") else {
+   guard let ruta = Bundle.main.url(forResource: "MOCK_DATA", withExtension: "json"), let rutaDoc = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("MOCK_DATA").appendingPathExtension("json") else {
       return
    }
+   print(rutaDoc)
+   let rutaFinal = FileManager.default.fileExists(atPath: rutaDoc.path) ? rutaDoc : ruta
    do {
-      let rawData = try Data(contentsOf: ruta)
+      let rawData = try Data(contentsOf: rutaFinal)
       let decoder = JSONDecoder()
       mockdata = try decoder.decode([MockData].self, from: rawData)
    } catch {
